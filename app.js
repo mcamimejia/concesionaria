@@ -11,8 +11,8 @@ const concesionaria = {
         return null;
         },
     venderAuto: function(patente1){
-        autoSelected = this.buscarAuto(patente1)
-        indice = this.autos.indexOf(autoSelected);
+        let autoSelected = this.buscarAuto(patente1)
+        let indice = this.autos.indexOf(autoSelected);
         this.autos[indice].vendido = true;
     },
     autosParaLaVenta: function(){
@@ -23,7 +23,7 @@ const concesionaria = {
     },
     autosNuevos: function(){
         let autosEnVenta = this.autosParaLaVenta();
-        autos0Km = autosEnVenta.filter(function(element){
+        let = autos0Km = autosEnVenta.filter(function(element){
             return element.km < 100;
         });  
     return autos0Km;
@@ -71,7 +71,7 @@ let persona1 = {
 
 //concesionaria.venderAuto("JJK116");
 
-console.log(concesionaria.autosQuePuedeComprar(persona1));
-
+//console.log(concesionaria.autosQuePuedeComprar(persona1));
+console.log(concesionaria.autos)
 
 
